@@ -1,0 +1,25 @@
+{
+  "name": "jseliga/yii2-serialize-behavior",
+  "type": "yii2-extension",
+  "description": "Behavior for automatic serialization and deserialization ActiveRecord's attributes",
+  "keywords": ["yii2", "behavior", "serialize"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/jseliga/yii2-serialize-behavior/issues",
+    "source": "https://github.com/jseliga/yii2-serialize-behavior"
+  },
+  "authors": [
+    {
+      "name": "Jan Šeliga",
+      "email": "seliga.honza@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "jseliga\\serialize\\": "src"
+    }
+  }
+}
