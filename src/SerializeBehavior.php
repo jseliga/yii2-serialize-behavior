@@ -63,12 +63,20 @@ class SerializeBehavior extends Behavior
     /**
      * @inheritdoc
      */
-    public function init()
+    public function attach($owner)
     {
+        parent::attach($owner);
+
         if (!$this->owner instanceof ActiveRecord) {
             throw new InvalidConfigException('Owner of behavior must be instance of "' . ActiveRecord::class . '".');
         }
+    }
 
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
         if (!$this->attributes) {
             throw new InvalidConfigException('The "attributes" property must be set.');
         }
